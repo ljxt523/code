@@ -1,0 +1,1 @@
+编译代码之前，请先自行编译好libspeex库，并将libspeex.a拷贝到系统的lib目录：/usr/local/lib 和 /usr/local/lib64
