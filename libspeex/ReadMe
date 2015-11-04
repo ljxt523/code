@@ -1,1 +1,4 @@
 编译代码之前，请先自行编译好libspeex库，并将libspeex.a拷贝到系统的lib目录：/usr/local/lib 和 /usr/local/lib64
+
+speexenc 的输入文件为PCM格式的音频裸数据，代码中使用的speex_nb_mode编码。输出文件为编码后的speex数据，每个speex数据包之前有四字节的长度字段标识speex数据包的大小。长度字段为little-endian。
+speexdec 的输入文件为speexenc的输出文件，输出文件为PCM裸数据
